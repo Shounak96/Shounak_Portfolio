@@ -84,7 +84,7 @@ export default function Home() {
           I spent 2+ years at Cognizant building and operating backend systems in production, 
           then taught myself full-stack development by shipping real products solo. 
            I don't just write code,I own it from architecture to deployment 
-          .And when a problem calls for it, I go deeper from integrating AI into products to building ML 
+          and when a problem calls for it, I go deeper from integrating AI into products to building ML 
           pipelines from scratch.
         </p>
       </section>
@@ -309,8 +309,8 @@ export default function Home() {
         </div>
       </div>
 
-      <p className="mt-4 leading-7 text-slate-300">
-        A full-stack personal finance tracker that helps users manage
+      <p className="mt-4 leading-7 text-slate-300 text-justify">
+        An AI-powered personal finance tracker that helps users manage
         transactions, budgets, balances, and spending insights through an
         interactive dashboard.
       </p>
@@ -379,8 +379,8 @@ export default function Home() {
         </div>
       </div>
 
-      <p className="mt-4 leading-7 text-slate-300">
-        An AI-powered productivity and idea-generation platform that helps users
+      <p className="mt-4 leading-7 text-slate-300 text-justify">
+        An AI-powered productivity and idea-generation platform that helps YouTubers to
         transform ideas into actionable plans using intelligent suggestions and
         structured workflows.
       </p>
@@ -455,6 +455,8 @@ export default function Home() {
           "DeBERTa",
           "CatBoost",
           "Scikit-learn",
+          "Pandas",
+          "Numpy"
         ].map((tech) => (
           <span
             key={tech}
@@ -495,7 +497,7 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-4 leading-7 text-slate-300">
+          <p className="mt-4 leading-7 text-slate-300 text-justify">
             A real-time gesture-controlled Snake game that replaces keyboard input with
             webcam-based hand tracking, using computer vision to translate finger
             movement into smooth directional gameplay.
@@ -551,7 +553,7 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-4 leading-7 text-slate-300">
+          <p className="mt-4 leading-7 text-slate-300 text-justify">
             An AI-powered Checkers game that uses adversarial search algorithms to
             simulate intelligent gameplay, enabling a human player to compete against a
             decision-making agent.
@@ -606,7 +608,7 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-4 leading-7 text-slate-300">
+          <p className="mt-4 leading-7 text-slate-300 text-justify">
             A multi-phase compiler for a C-like language, implementing lexical
             analysis, parsing, semantic type checking, and JVM code generation using
             Krakatau assembly.

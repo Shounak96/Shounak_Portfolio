@@ -5,14 +5,14 @@ export default function FinTrackPage() {
       {/* Title */}
       <div>
         <p className="text-sm uppercase tracking-[0.3em] text-blue-300">
-          Featured Project
+          Fullstack + AI Project
         </p>
 
         <h1 className="mt-4 text-4xl font-semibold text-white md:text-5xl">
-          FinTrack — AI-Powered Financial Tracking Platform
+          FinTrack - AI-Powered Financial Tracking Platform
         </h1>
 
-        <p className="mt-6 text-lg text-slate-300 leading-8">
+        <p className="mt-6 text-lg text-slate-300 leading-8 text-justify">
           A full-stack financial tracking system that helps users manage
           transactions, budgets, and insights with AI-powered categorization and
           analytics.
@@ -47,7 +47,7 @@ export default function FinTrackPage() {
       {/* Section: Overview */}
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">Overview</h2>
-        <p className="mt-4 text-slate-300 leading-8">
+        <p className="mt-4 text-slate-300 leading-8 text-justify">
           FinTrack is a full-stack personal finance application designed to
           simplify financial management through automation, intelligent insights,
           and real-time analytics. It allows users to track transactions, manage
@@ -62,6 +62,7 @@ export default function FinTrackPage() {
         <div className="mt-6 flex flex-wrap gap-3">
           {[
             "Next.js",
+            "Node.js",
             "TypeScript",
             "React",
             "Tailwind CSS",
@@ -97,36 +98,6 @@ export default function FinTrackPage() {
         </ul>
       </section>
 
-      {/* Section: Screenshots */}
-        <section className="mt-16">
-        <h2 className="text-2xl font-semibold text-white">Screenshots</h2>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="overflow-hidden rounded-xl border border-white/10">
-            <img
-                src="/projects/fintrack/Dashboard.jpg"
-                alt="FinTrack Dashboard"
-                className="h-full w-full object-cover transition duration-300 hover:scale-105"
-            />
-            </div>
-
-            <div className="overflow-hidden rounded-xl border border-white/10">
-            <img
-                src="/projects/fintrack/Transaction.jpg"
-                alt="Transaction Page"
-                className="h-full w-full object-cover transition duration-300 hover:scale-105"
-            />
-            </div>
-
-            <div className="overflow-hidden rounded-xl border border-white/10 md:col-span-2">
-            <img
-                src="/projects/fintrack/Analytics.jpg"
-                alt="Analytics Page"
-                className="h-full w-full object-cover transition duration-300 hover:scale-105"
-            />
-            </div>
-        </div>
-        </section>
 
       {/* Section: Challenges */}
       <section className="mt-16">
@@ -134,7 +105,7 @@ export default function FinTrackPage() {
           Challenges & Solutions
         </h2>
 
-        <p className="mt-4 text-slate-300 leading-8">
+        <p className="mt-4 text-slate-300 leading-8 text-justify">
           One of the key challenges was designing a scalable backend capable of
           handling asynchronous AI workflows and real-time data updates. This was
           addressed by implementing background job processing with Inngest and
@@ -146,7 +117,7 @@ export default function FinTrackPage() {
       <section className="mt-16 mb-20">
         <h2 className="text-2xl font-semibold text-white">Impact</h2>
 
-        <p className="mt-4 text-slate-300 leading-8">
+        <p className="mt-4 text-slate-300 leading-8 text-justify">
           FinTrack demonstrates strong full-stack engineering capability combined
           with AI integration. It highlights the ability to design scalable
           systems, optimize backend performance, and deliver real-world usable

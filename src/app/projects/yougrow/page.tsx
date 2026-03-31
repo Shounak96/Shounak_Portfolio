@@ -13,10 +13,10 @@ export default function YouGrowPage() {
           YouGrow
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-slate-300">
+        <p className="mt-6 text-lg leading-8 text-slate-300 text-justify">
           A full-stack SaaS-style platform designed to help YouTube creators
           generate ideas, analyze trends, and improve content consistency using
-          their own data — all through a clean, modern interface.
+          their own data all through a clean, modern interface.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -50,7 +50,7 @@ export default function YouGrowPage() {
       {/* Overview */}
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">Overview</h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           YouGrow is built as an end-to-end product to support content creators
           in ideation and growth. Instead of relying on external analytics APIs,
           the system focuses on leveraging user-owned data and structured
@@ -93,7 +93,7 @@ export default function YouGrowPage() {
             </h3>
             <ul className="mt-4 space-y-2 text-slate-300">
               <li>• Queue-based idea generation per channel</li>
-              <li>• Background job processing (local worker)</li>
+              <li>• Background job processing</li>
               <li>• AI-generated outputs include:</li>
               <li className="ml-4">- Topic</li>
               <li className="ml-4">- Hook</li>
@@ -131,7 +131,7 @@ export default function YouGrowPage() {
           System Architecture
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The system is designed as a full-stack SaaS architecture with clear
           separation between frontend UI, backend logic, and asynchronous job
           processing. Background jobs enable scalable AI operations without
@@ -141,10 +141,11 @@ export default function YouGrowPage() {
         <div className="mt-6 flex flex-wrap gap-3">
           {[
             "Next.js (App Router)",
+            "Node.js",
             "React",
             "TypeScript",
             "Prisma ORM",
-            "SQLite",
+            "PostgreSQL",
             "NextAuth (Auth.js)",
             "Server Actions",
             "Background Job Queue",
@@ -166,7 +167,7 @@ export default function YouGrowPage() {
           UI / UX Design
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The interface follows a clean, SaaS-style design with a focus on
           usability and clarity. The dashboard is responsive, supports
           empty-state handling, and presents insights in a structured and
@@ -180,44 +181,18 @@ export default function YouGrowPage() {
           Challenges & Learnings
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           One of the biggest challenges was integrating AI-driven workflows into
           a real product environment. Designing a job queue system that could
           handle asynchronous idea generation while maintaining a smooth user
           experience required careful architectural decisions.
         </p>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           This project strengthened my ability to build production-ready systems,
           combine AI with real user workflows, and think beyond features toward
           complete product design.
         </p>
-      </section>
-
-      {/* Footer */}
-      <section className="mt-16 mb-20">
-        <h2 className="text-2xl font-semibold text-white">Tech Stack</h2>
-
-        <div className="mt-6 flex flex-wrap gap-3">
-          {[
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Tailwind CSS",
-            "Prisma",
-            "SQLite",
-            "NextAuth",
-            "Gemini AI",
-            "Full-Stack Development",
-          ].map((tech) => (
-            <span
-              key={tech}
-              className="rounded-full border border-slate-700 bg-slate-950/70 px-4 py-2 text-sm text-slate-200"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
       </section>
     </main>
   );

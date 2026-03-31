@@ -13,7 +13,7 @@ export default function CCompilerPage() {
           C-Subset Compiler
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-slate-300">
+        <p className="mt-6 text-lg leading-8 text-slate-300 text-justify">
           A multi-phase compiler for a C-like language implemented in Python,
           covering the full compilation pipeline from lexical analysis to JVM
           code generation using Krakatau assembly.
@@ -44,7 +44,7 @@ export default function CCompilerPage() {
           Compiler Pipeline Overview
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The compiler follows a classical multi-phase architecture, where each
           stage transforms the program representation step-by-step from source
           code to executable JVM assembly. The system is orchestrated through a
@@ -80,7 +80,7 @@ export default function CCompilerPage() {
             <h3 className="text-xl font-semibold text-white">
               Lexical Analysis
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               Converts source code into tokens using pattern matching rules.
               Handles keywords, identifiers, literals, operators, and comments.
             </p>
@@ -90,7 +90,7 @@ export default function CCompilerPage() {
             <h3 className="text-xl font-semibold text-white">
               Parsing (Recursive Descent)
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               Builds syntactic structure from tokens using a recursive-descent
               parser. Recognizes functions, declarations, expressions, and
               control structures.
@@ -101,7 +101,7 @@ export default function CCompilerPage() {
             <h3 className="text-xl font-semibold text-white">
               Type Checking
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               Performs semantic validation, enforcing type rules, scope
               correctness, function calls, and struct access.
             </p>
@@ -111,7 +111,7 @@ export default function CCompilerPage() {
             <h3 className="text-xl font-semibold text-white">
               Code Generation
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               Generates JVM/Krakatau assembly for expressions, functions, and
               control-flow constructs including loops and conditionals.
             </p>
@@ -123,7 +123,7 @@ export default function CCompilerPage() {
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">System Design</h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The compiler is organized into modular components corresponding to
           each phase, allowing independent development and testing. The driver
           script integrates all modules into a complete compilation pipeline.
@@ -154,14 +154,14 @@ export default function CCompilerPage() {
           Challenges & Learnings
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           Building a full compiler pipeline required careful coordination
           between phases, especially ensuring consistency between parsing,
           semantic analysis, and code generation. Handling control flow,
           type rules, and stack-based JVM instructions added complexity.
         </p>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           This project strengthened my understanding of programming language
           design, compiler construction, and low-level execution models.
         </p>

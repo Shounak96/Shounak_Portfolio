@@ -10,10 +10,10 @@ export default function CheckersAIPage() {
         </p>
 
         <h1 className="mt-4 text-4xl font-semibold text-white md:text-5xl">
-          Checkers AI — Alpha-Beta & Monte Carlo Tree Search
+          Checkers AI - Alpha-Beta & Monte Carlo Tree Search
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-slate-300">
+        <p className="mt-6 text-lg leading-8 text-slate-300 text-justify">
           A Java-based Checkers AI system implementing multiple adversarial
           search strategies including Alpha-Beta pruning, Monte Carlo Tree
           Search (MCTS), and a hybrid agent. The project includes a GUI that
@@ -43,7 +43,7 @@ export default function CheckersAIPage() {
       {/* Overview */}
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">Overview</h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           This project implements a complete Checkers-playing AI system using
           multiple adversarial search strategies. The system evaluates board
           states, simulates future moves, and selects optimal actions using both
@@ -78,7 +78,7 @@ export default function CheckersAIPage() {
             <h3 className="text-xl font-semibold text-white">
               Alpha-Beta Pruning
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The Alpha-Beta pruning algorithm optimizes minimax search by
               eliminating branches that cannot influence the final decision.
               This significantly reduces the search space while maintaining
@@ -90,7 +90,7 @@ export default function CheckersAIPage() {
             <h3 className="text-xl font-semibold text-white">
               Monte Carlo Tree Search (MCTS)
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               MCTS explores the game tree using stochastic simulations and
               balances exploration and exploitation using UCB-style selection.
               It is particularly useful for handling large search spaces where
@@ -102,7 +102,7 @@ export default function CheckersAIPage() {
             <h3 className="text-xl font-semibold text-white">
               Hybrid Agent
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               A hybrid approach was implemented to combine the strengths of both
               Alpha-Beta pruning and MCTS. This allows the system to leverage
               deterministic search for precision and stochastic search for
@@ -116,7 +116,7 @@ export default function CheckersAIPage() {
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">System Design</h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The system follows a modular object-oriented design in Java, separating
           concerns between game logic, search algorithms, and UI interaction.
         </p>
@@ -147,7 +147,7 @@ export default function CheckersAIPage() {
           Challenges & Learnings
         </h2>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           One of the main challenges was balancing search depth and computation
           time. While Alpha-Beta pruning improves efficiency, deeper searches
           still increase complexity significantly. MCTS introduced probabilistic
@@ -155,7 +155,7 @@ export default function CheckersAIPage() {
           trade-offs.
         </p>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           This project strengthened my understanding of adversarial search,
           decision-making under constraints, and how different AI strategies
           perform in structured game environments.

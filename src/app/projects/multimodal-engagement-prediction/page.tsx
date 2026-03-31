@@ -11,7 +11,7 @@ export default function MultimodalEngagementPredictionPage() {
           Multimodal Engagement Prediction
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-slate-300">
+        <p className="mt-6 text-lg leading-8 text-slate-300 text-justify">
           A multimodal machine learning project focused on predicting the
           engagement of social-media posts by combining image and text signals.
           The work compared classification, feature-engineered ensemble
@@ -39,7 +39,7 @@ export default function MultimodalEngagementPredictionPage() {
 
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">Overview</h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The goal of this project was to predict how much engagement a
           social-media post would receive using both its image and its textual
           metadata. Instead of relying on only one modality, the project treated
@@ -52,7 +52,7 @@ export default function MultimodalEngagementPredictionPage() {
         <h2 className="text-2xl font-semibold text-white">
           Dataset and Problem Setup
         </h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           The project used the PixelRec dataset, where each sample includes an
           image, text metadata such as title, tags, and description, and raw
           engagement signals including likes, comments, shares, favorites, and
@@ -96,7 +96,7 @@ export default function MultimodalEngagementPredictionPage() {
             <h3 className="text-xl font-semibold text-white">
               1. Fine-Tuned Multimodal Classification
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The first approach used a transformer-based multimodal
               classification pipeline with ViT for image encoding and BERT for
               text encoding. Different fusion strategies were explored to combine
@@ -122,7 +122,7 @@ export default function MultimodalEngagementPredictionPage() {
             <h3 className="text-xl font-semibold text-white">
               2. Feature-Based CatBoost Classification
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The second approach extracted fixed multimodal features using CLIP
               embeddings and combined them with engineered engagement and
               metadata features. These were then used to train a CatBoost
@@ -148,7 +148,7 @@ export default function MultimodalEngagementPredictionPage() {
             <h3 className="text-xl font-semibold text-white">
               3. Multimodal Regression
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The final and most promising direction reformulated the task as a
               regression problem. It used SigLIP for visual encoding and
               DeBERTa for text encoding, then fused the representations using
@@ -201,7 +201,7 @@ export default function MultimodalEngagementPredictionPage() {
           </div>
         </div>
 
-        <p className="mt-8 leading-8 text-slate-300">
+        <p className="mt-8 leading-8 text-slate-300 text-justify">
           The experiments showed that this problem was difficult to solve as a
           pure classification task, especially when label ambiguity and class
           boundaries introduced noise. The regression setup preserved more
@@ -214,7 +214,7 @@ export default function MultimodalEngagementPredictionPage() {
         <h2 className="text-2xl font-semibold text-white">
           Challenges and Key Learnings
         </h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           One of the biggest challenges in this project was that engagement is
           inherently noisy and difficult to define cleanly. Posts with similar
           content can receive very different engagement due to external factors,
@@ -224,7 +224,7 @@ export default function MultimodalEngagementPredictionPage() {
           goal of the system.
         </p>
 
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           A major takeaway was that framing the problem correctly can matter as
           much as model complexity. Moving from rigid classification to a
           continuous target created a more meaningful learning signal, and the

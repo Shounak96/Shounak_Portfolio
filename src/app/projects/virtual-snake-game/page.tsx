@@ -12,7 +12,7 @@ export default function VirtualSnakeGamePage() {
           Virtual Snake Game
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-slate-300">
+        <p className="mt-6 text-lg leading-8 text-slate-300 text-justify">
           A real-time gesture-controlled Snake game that replaces keyboard input
           with webcam-based hand tracking. The system interprets finger motion
           as directional commands and translates them into smooth, hands-free
@@ -52,7 +52,7 @@ export default function VirtualSnakeGamePage() {
 
       <section className="mt-16">
         <h2 className="text-2xl font-semibold text-white">Overview</h2>
-        <p className="mt-4 leading-8 text-slate-300">
+        <p className="mt-4 leading-8 text-slate-300 text-justify">
           This project reimagined the classic Snake game as a touchless
           human-computer interaction experience. Instead of relying on a
           keyboard or joystick, players control the snake using hand gestures in
@@ -70,7 +70,7 @@ export default function VirtualSnakeGamePage() {
             <h3 className="text-xl font-semibold text-white">
               1. Webcam Capture and Hand Tracking
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The system continuously captures frames from a webcam and processes
               them using OpenCV and the CVZone hand tracking module built on top
               of MediaPipe. It assumes single-hand detection and focuses on
@@ -82,7 +82,7 @@ export default function VirtualSnakeGamePage() {
             <h3 className="text-xl font-semibold text-white">
               2. Gesture-to-Direction Mapping
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The fingertip position is tracked across consecutive frames using
               previous and current coordinates. Motion deltas along the x and y
               axes are compared, and threshold-based logic is used to classify a
@@ -95,7 +95,7 @@ export default function VirtualSnakeGamePage() {
             <h3 className="text-xl font-semibold text-white">
               3. Real-Time Game Logic
             </h3>
-            <p className="mt-4 leading-8 text-slate-300">
+            <p className="mt-4 leading-8 text-slate-300 text-justify">
               The final direction command is passed into a PyGame-based Snake
               implementation. The game loop updates the snake position, checks
               for food consumption, handles growth, tracks the score, and
@@ -131,7 +131,7 @@ export default function VirtualSnakeGamePage() {
           ))}
         </div>
 
-        <p className="mt-6 leading-8 text-slate-300">
+        <p className="mt-6 leading-8 text-slate-300 text-justify">
           A key design choice was to track only the index fingertip instead of
           analyzing all hand landmarks for gesture classification. This reduced
           computational overhead, lowered latency, and made the controls more
@@ -155,7 +155,7 @@ export default function VirtualSnakeGamePage() {
             <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Frame Rate
             </p>
-            <p className="mt-4 text-3xl font-semibold text-white">24–30 FPS</p>
+            <p className="mt-4 text-3xl font-semibold text-white">40-50 FPS</p>
             <p className="mt-2 text-slate-300">Stable real-time gameplay</p>
           </div>
 
@@ -163,7 +163,7 @@ export default function VirtualSnakeGamePage() {
             <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
               Input Delay
             </p>
-            <p className="mt-4 text-3xl font-semibold text-white">&lt; 200 ms</p>
+            <p className="mt-4 text-3xl font-semibold text-white">25-30ms</p>
             <p className="mt-2 text-slate-300">Responsive gesture control</p>
           </div>
         </div>
@@ -229,17 +229,6 @@ export default function VirtualSnakeGamePage() {
           into one complete application. Beyond gaming, the same design ideas
           can extend to touchless interfaces, accessibility tools, and
           interactive public systems.
-        </p>
-      </section>
-
-      <section className="mt-16 mb-20">
-        <h2 className="text-2xl font-semibold text-white">
-          Screenshots and Demo
-        </h2>
-        <p className="mt-4 leading-8 text-slate-300">
-          We can add your screenshots here in a gallery layout and place your
-          demo video link or embedded video above them. Once you send those
-          assets, I’ll make this page much more impressive visually.
         </p>
       </section>
     </main>
